@@ -1,0 +1,17 @@
+{
+  "id": "queenssillies",
+  "name": "Queen's Sillies",
+  "author": [
+    "queen of stupid"
+  ],
+  "description": "Various jokers made by me for my friends :3 (Art mostly done by me with some assets taken from Pokemon, Pokemon Mystery Dungeon, the Smogon Sprite Project, and the PMD Sprite Repository)",
+  "prefix": "qsilly",
+  "main_file": "main.lua",
+  "version": "1.0.0",
+  "priority": 0,
+  "badge_colour": "5a9cef",
+  "badge_text_colour": "FFFFFF",
+  "dependencies": [
+    "Steamodded (>=1.0.0~BETA-0404a)"
+  ]
+}
