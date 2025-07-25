@@ -22,7 +22,7 @@ SMODS.Joker{ --Hemlock
         }
     },
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.xmult, card.ability.extra.xmult_increase, card.ability.extra.total_increase}}
+        return {vars = {card.ability.extra.xmult, card.ability.extra.xmult_increase, 1.25 + card.ability.extra.total_increase}}
     end,
 
 	update = function(self, card, dt)
