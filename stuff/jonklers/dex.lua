@@ -28,7 +28,12 @@ SMODS.Joker{ --Dex
 				G.GAME.joker_buffer = G.GAME.joker_buffer + 1
 				G.E_MANAGER:add_event(Event({
                             func = function() 
-                                SMODS.add_card{set = 'Joker', key ='j_oops', edition = "e_negative", stickers = {"perishable"}}
+                                SMODS.add_card{
+                                set = 'Joker', 
+                                key ='j_oops', 
+                                edition = "e_negative", 
+                                stickers = {"perishable"}
+                            }
                                 G.GAME.joker_buffer = G.GAME.joker_buffer - 1
                                 return true
                             end
