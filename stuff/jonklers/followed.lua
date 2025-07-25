@@ -37,7 +37,7 @@ SMODS.Joker{ --Followed
 		if context.selling_self then
 			local ignoreone = true
 			for i = 1, card.ability.extra.numjokers do
-				if (#G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit) or ignoreone then
+				if (#G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit + 1) or ignoreone then
 				G.GAME.joker_buffer = G.GAME.joker_buffer + 1
 				ignoreone = false
 				G.E_MANAGER:add_event(Event({

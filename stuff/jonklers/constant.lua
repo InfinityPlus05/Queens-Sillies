@@ -25,7 +25,7 @@ SMODS.Joker{ --Constant
     end,
 	
 	calculate = function(self, card, context)
-        if context.selling_self and #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
+        if context.selling_self and #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit + 1 then
 				G.GAME.joker_buffer = G.GAME.joker_buffer + 1
 				G.E_MANAGER:add_event(Event({
                             func = function() 
