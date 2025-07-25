@@ -12,7 +12,7 @@ SMODS.Joker{ --Hemlock
     blueprint_compat = true,
     eternal_compat = true,
     unlocked = true,
-    discovered = true,
+    discovered = false,
     atlas = 'CustomJokers',
 	config = {
         extra = {

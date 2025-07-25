@@ -18,7 +18,7 @@ SMODS.Joker{ --Followed
     blueprint_compat = true,
     eternal_compat = false,
     unlocked = true,
-    discovered = true,
+    discovered = false,
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)

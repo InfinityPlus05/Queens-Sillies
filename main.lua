@@ -65,7 +65,31 @@ function loadshit(items, path)
   end
 end
 
-
 loadshit(jonklers, "stuff/jonklers")
+
+to_big = to_big or function(num)
+  return num
+end
+to_number = to_number or function(num)
+  return num
+end
+
+local old_g_funcs_can_select_card = G.FUNCS.can_select_card
+G.FUNCS.can_select_card = function(e)
+  if e.config.ref_table.ability.name == "Lillie" and e.config.ref_table.ability.extra.slots >= 1 then 
+    e.config.colour = G.C.GREEN
+    e.config.button = 'use_card'
+  else
+    old_g_funcs_can_select_card(e)
+  end
+end
+
+local old_g_funcs_check_for_buy_space = G.FUNCS.check_for_buy_space
+G.FUNCS.check_for_buy_space = function(card)
+  if card.ability.name == "Lillie" and card.ability.extra.slots >= 1 then
+    return true
+  end
+  return old_g_funcs_check_for_buy_space(card)
+end
 
 return mod

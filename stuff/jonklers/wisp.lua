@@ -5,7 +5,7 @@ SMODS.Joker { -- Wisp
     rarity = 4,
     cost = 20,
 	unlocked = true,
-    discovered = true,
+    discovered = false,
     pos = { x = 3, y = 0 },
 	soul_pos = { x = 3, y = 1 },
 	atlas = 'CustomJokers',
