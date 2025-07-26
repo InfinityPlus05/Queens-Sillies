@@ -8,8 +8,8 @@ Chunsoft and the PMD Sprite Repository for the Pokemon Mystery Dungeon art asset
 
 The Pokemon Company and the Smogon Sprite Project for the Pokemon Sprite Bases
 
-@certifiedlillie (https://certifiedlillie.neocities.org/) for her art for her joker
+[@certifiedlillie](https://certifiedlillie.neocities.org/) for her art for her joker
 
-@mollystars (https://mollystars.dev/) for the background for the Constant joker
+[@mollystars](https://mollystars.dev/) for the background for the Constant joker
 
 All other art done by me :3
