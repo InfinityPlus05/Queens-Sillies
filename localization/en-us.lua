@@ -5,7 +5,7 @@ return {
 				name = 'Bubble',
 				text = {
 					'{C:attention}Queens{} count as',
-					'{C:attention}Wild{} and {C:attention}Lucky Cards{}',
+					'{C:attention}Wild{} and {C:attention}Lucky{} cards{}',
 					'and cannot be debuffed'
 					},
 			},
@@ -25,6 +25,31 @@ return {
 					'Increases by {X:mult,C:white}X#2#{} for',
 					'every card held in hand',
 					'{C:inactive}(Currently {X:mult,C:white}X#3#{C:inactive} Mult)'
+				}
+			},
+			j_qsilly_cobolt = {
+				name = 'Cobolt',
+				text = {'{C:attention}Steel{} cards give {X:mult,C:white}X#1#{}',
+				'Mult when scored',
+				'If {C:attention}Steel{} card is played',
+				'without edition, add',
+				'{C:dark_edition}Polychrome{} to it'
+				},
+			},
+			j_qsilly_calla = {
+				name = 'Calla',
+				text = {
+					'Balance {C:chips}Chips{} and {C:mult}Mult{}',
+					'if hand contains',
+					'a scoring {C:attention}9{}'
+				}
+			},
+			j_qsilly_melody = {
+				name = 'Melody',
+				text = {
+					'Replace {C:attention}Joker{} to the right',
+					'with a {C:attention}Joker{} of the same ',
+					'{C:green}rarity{} when hand is played'
 				}
 			},
 			j_qsilly_adventuringparty = {
@@ -63,12 +88,7 @@ return {
 				text = {'Played {C:attention}Steel{} cards',
 				'earn {C:money}$#1#{} when scored'}
 			},
-			j_qsilly_cobalt = {
-				name = 'Cobalt',
-				text = {'{C:attention}Steel{} cards gain a random',
-				'{C:dark_edition}Edition{} and a random',
-				'{C:attention}Seal{} when scored'},
-			},
+			
 			j_qsilly_dex = {
 				name = 'Dex',
 				text = {'If blind was beaten in',
@@ -160,13 +180,7 @@ return {
 			[4] = '{S:1.1,C:red,E:2}self destruct{} at end of round'
         }
     },
-	j_qsilly_calla = {
-        ['name'] = 'Calla',
-        ['text'] = {
-            [1] = 'If hand contains a scoring {C:attention}9{},',
-            [2] = 'Balance {C:chips}Chips{} and {C:mult}Mult{}'
-        }
-    },
+	
 	j_qsilly_nevanya = {
         ['name'] = 'Nevanya',
         ['text'] = {
@@ -204,13 +218,19 @@ return {
     },
 			
 		
-		Other = {
-			qsilly_perishinfo = {
-				name = "Perishable",
-				text = {'Debuffed after',
-				'{C:attention}5{} rounds'},
-			}
+	Other = {
+		qsilly_perishinfo = {
+			name = "Perishable",
+			text = {'Debuffed after',
+			'{C:attention}5{} rounds'},
 		}
 	},
-}
+	},
+	},
+	misc = {
+		dictionary = {
+			qsilly_polychrome = "Polychrome!",
+			qsilly_switch = "Switch!",
+		}
+	}
 }

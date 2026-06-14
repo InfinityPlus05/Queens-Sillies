@@ -17,7 +17,7 @@ SMODS.Joker{ --Calla
     eternal_compat = true,
     unlocked = true,
     discovered = false,
-    atlas = 'CustomJokers',
+    atlas = 'jokers_atlas',
 
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.chips } }
