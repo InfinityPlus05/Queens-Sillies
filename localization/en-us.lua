@@ -2,10 +2,12 @@ return {
 	descriptions = {
 		Joker = {
 			j_qsilly_queen = {
-				name = 'Queen',
-				text = {'{C:attention}Queens{} count as both',
-				'{C:attention}Wild{} and {C:attention}Lucky Cards{}',
-				'and cannot be debuffed'},
+				name = 'Bubble',
+				text = {
+					'{C:attention}Queens{} count as',
+					'{C:attention}Wild{} and {C:attention}Lucky Cards{}',
+					'and cannot be debuffed'
+					},
 			},
 			j_qsilly_adventuringparty = {
 				name = 'Spelljamming Mercenaries',
