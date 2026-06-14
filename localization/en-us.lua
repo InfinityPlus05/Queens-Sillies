@@ -9,6 +9,24 @@ return {
 					'and cannot be debuffed'
 					},
 			},
+			j_qsilly_wisp = {
+				name = 'Wisp',
+				text = {
+					'Copies {C:attention}Jokers{} to',
+					'the left and right',
+					'{C:attention}X#1#{} Blind size'
+				},
+			},
+			j_qsilly_hemlock = {
+				name = 'Hemlock',
+				text = {
+					'Scored {C:attention}2s{}, {C:attention}3s{}, {C:attention}4s{} and {C:attention}5s{}',
+					'give {X:mult,C:white}X#1#{} Mult when scored',
+					'Increases by {X:mult,C:white}X#2#{} for',
+					'every card held in hand',
+					'{C:inactive}(Currently {X:mult,C:white}X#3#{C:inactive} Mult)'
+				}
+			},
 			j_qsilly_adventuringparty = {
 				name = 'Spelljamming Mercenaries',
 				text = {'{C:chips}+100{} Chips and {C:mult}+20{} Mult',
@@ -71,16 +89,6 @@ return {
             [2] = '({C:dark_edition}+#1#{} Joker Slot)',
             [3] = '{C:inactive}"im not giving you bonuses im getting my beauty nap"',
 			[4] = "{C:inactive}Art by certifiedlillie"
-        }
-    },
-	j_qsilly_hemlock = {
-        ['name'] = 'Hemlock',
-        ['text'] = {
-            [1] = 'Scored {C:attention}2s{}, {C:attention}3s{}, {C:attention}4s{} and {C:attention}5s{}',
-            [2] = 'give {X:mult,C:white}X#1#{} Mult when scored',
-            [3] = 'Increases by {X:mult,C:white}X#2#{} for',
-			[4] = 'every card held in hand',
-			[5] = '{C:inactive}(Currently {X:mult,C:white}X#3#{C:inactive} Mult)'
         }
     },
     j_qsilly_wontbereplaced = {
@@ -194,14 +202,7 @@ return {
 			[4] = '{C:inactive}(Resets after each hand played)'
         }
     },
-			j_qsilly_wisp = {
-				name = 'Wisp',
-				text = {
-					'Copies the {C:attention}Jokers{}',
-					'to the left and right'
-				},
-			}
-		},
+			
 		
 		Other = {
 			qsilly_perishinfo = {
@@ -211,5 +212,5 @@ return {
 			}
 		}
 	},
-	
+}
 }

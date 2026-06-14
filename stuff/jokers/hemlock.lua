@@ -13,7 +13,7 @@ SMODS.Joker{ --Hemlock
     eternal_compat = true,
     unlocked = true,
     discovered = false,
-    atlas = 'CustomJokers',
+    atlas = 'jokers_atlas',
 	config = {
         extra = {
             xmult = 1.25,
