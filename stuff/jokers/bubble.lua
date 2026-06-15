@@ -24,10 +24,9 @@ SMODS.Joker{ --Queen
         return {vars = {}}
     end,
 	calculate = function(self, card, context)
-    -- When hand is drawn
-    if context.debuff_card and context.debuff_card:get_id() == 12 then
-     return {prevent_debuff = true}
-end    
+        if context.debuff_card and context.debuff_card:get_id() == 12 then
+            return {prevent_debuff = true}
+        end    
 	
 		if context.check_enhancement and context.other_card.base.id == 12 then
 			return {m_wild = true, m_lucky = true}

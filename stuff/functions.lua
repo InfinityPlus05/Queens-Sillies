@@ -15,9 +15,9 @@ QSILLY.jokers = {
   "hemlock",
   "cobolt",
   "calla",
-  --"ruko",
+  "ruko",
   "melody", -- Headmates
-  --"beepboop",
+  "beepboop",
   --"hollo",
 	--"etherealconnection",
   --"byte",

@@ -44,6 +44,14 @@ return {
 					'a scoring {C:attention}9{}'
 				}
 			},
+			j_qsilly_ruko = {
+				name = 'Ruko',
+				text = {
+                    "Earn {C:money}$#1#{} at end of round",
+                    "Payout increases by {C:money}$#2#{}",
+					"at end of {C:attention}Blind{}"
+                },
+			},
 			j_qsilly_melody = {
 				name = 'Melody',
 				text = {
@@ -51,6 +59,15 @@ return {
 					'with a {C:attention}Joker{} of the same ',
 					'{C:green}rarity{} when hand is played'
 				}
+			},
+			j_qsilly_beepboop = {
+				name = 'Beep Boop',
+				text = {
+					'Gives mult equal to the',
+					'{C:green,E:1,S:1.1}Binary Number{} your',
+					'hand makes',
+					'{C:inactive}(Evens = 1, Odds = 0)'
+				},
 			},
 			j_qsilly_adventuringparty = {
 				name = 'Spelljamming Mercenaries',
