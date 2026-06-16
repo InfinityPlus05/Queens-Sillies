@@ -57,7 +57,7 @@ return {
 				text = {
 					'Replace {C:attention}Joker{} to the right',
 					'with a {C:attention}Joker{} of the same ',
-					'{C:green}rarity{} when hand is played'
+					'{C:attention}rarity{} when hand is played'
 				}
 			},
 			j_qsilly_beepboop = {
@@ -69,6 +69,37 @@ return {
 					'{C:inactive}(Evens = 1, Odds = 0)'
 				},
 			},
+			j_qsilly_hollo = {
+				name = 'Hollo',
+				text = {
+						'Creates a {C:tarot}Tarot{} card',
+					 	'when a {C:spectral}Spectral{} card is used',
+						'{C:inactive}(Must have room)'
+					}
+			},
+			j_qsilly_etherealconnection = {
+				name = 'Ethereal Connection',
+				text = {
+						'{C:attention}+#1#{} hand size for every {C:tarot}Tarot{} card',
+						'held in consumable slots',
+						'{C:inactive}(Currently {C:attention}+#2# {C:inactive}hand size)'
+				}
+			},
+			j_qsilly_byte = {
+                name = "Byte",
+                text = {
+                    "{C:attention}Jokers{} without {C:dark_edition}editions{}",
+                    "each give {C:chips}+#1#{} Chips",
+					'and {C:mult}+#2#{} Mult'
+                },
+            },
+			j_qsilly_argon = {
+                name = "Argon",
+                text = {
+                    "Selling a {C:attention}Joker{}",
+                    "creates a {C:attention}#1#",
+                },
+            },
 			j_qsilly_adventuringparty = {
 				name = 'Spelljamming Mercenaries',
 				text = {'{C:chips}+100{} Chips and {C:mult}+20{} Mult',
@@ -112,13 +143,7 @@ return {
 				'one hand, create a {C:dark_edition}Negative{}',
 				'{C:attention}Perishable {C:green}Oops! All 6s'},
 			},
-			j_qsilly_holloandespa = {
-			['name'] = 'Hollo and Espa',
-			['text'] = {
-            [1] = 'Creates a {C:tarot}Tarot{} card',
-			[2] = 'when a {C:spectral}Spectral{} card is used'
-				}
-			},
+			
 			j_qsilly_lillie = {
         ['name'] = 'Lillie',
         ['text'] = {
@@ -146,14 +171,7 @@ return {
 			[4] = '{C:inactive}(Currently #2#s)'
         }
     },
-	j_qsilly_etherealconnection = {
-        ['name'] = 'Ethereal Connection',
-        ['text'] = {
-            [1] = '{C:attention}+#1#{} hand size for every {C:tarot}Tarot{} card',
-            [2] = 'held in consumable slots',
-			[3] = '{C:inactive}(Currently {C:attention}+#2# {C:inactive}hand size)'
-        }
-    },
+	
 	
     j_qsilly_apricot = {
         ['name'] = 'Apricot',
@@ -233,21 +251,34 @@ return {
 			[4] = '{C:inactive}(Resets after each hand played)'
         }
     },
+		
 			
 		
-	Other = {
-		qsilly_perishinfo = {
-			name = "Perishable",
-			text = {'Debuffed after',
-			'{C:attention}5{} rounds'},
-		}
-	},
-	},
+			Other = {
+				qsilly_perishinfo = {
+					name = "Perishable",
+					text = {'Debuffed after',
+					'{C:attention}5{} rounds'},
+				}
+			},
+
+		},
+		Tag = {
+			tag_qsilly_front = {
+				name = "Front Tag",
+				text = {
+					"Shop has the",
+					"last {C:attention}Joker{} sold",
+					"{C:inactive}(Currently {C:attention}#1#{C:inactive})"
+				}
+      		}
+		},
 	},
 	misc = {
 		dictionary = {
 			qsilly_polychrome = "Polychrome!",
 			qsilly_switch = "Switch!",
+			qsilly_none = "None",
 		}
 	}
 }

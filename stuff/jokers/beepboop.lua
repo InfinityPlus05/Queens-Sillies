@@ -39,7 +39,7 @@ SMODS.Joker{
             SMODS.calculate_effect({
                 message = "["..binary_string.."]",
                 colour = G.C.RED,
-                card = card,
+                card = context.blueprint_card or card,
             })
             return {
                 mult = mult}

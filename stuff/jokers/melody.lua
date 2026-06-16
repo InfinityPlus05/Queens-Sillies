@@ -25,7 +25,9 @@ SMODS.Joker {
         if context.after and not context.blueprint then
             local other_joker = nil
             for i = 1, #G.jokers.cards do
-                if G.jokers.cards[i] == card and not SMODS.is_eternal(G.jokers.cards[i + 1], card) then other_joker = G.jokers.cards[i + 1] end
+                if G.jokers.cards[i] == card and G.jokers.cards[i + 1]
+                and not SMODS.is_eternal(G.jokers.cards[i + 1], card) then 
+                    other_joker = G.jokers.cards[i + 1] end
             end
             if other_joker then
                 local rarity = other_joker.config.center.rarity

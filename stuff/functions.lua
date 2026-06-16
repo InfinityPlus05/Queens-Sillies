@@ -18,10 +18,10 @@ QSILLY.jokers = {
   "ruko",
   "melody", -- Headmates
   "beepboop",
-  --"hollo",
-	--"etherealconnection",
-  --"byte",
-  --"argon",
+  "hollo",
+	"etherealconnection",
+  "byte",
+  "argon",
   --"glitch",
   --"torpedo",
   --"loop",
@@ -73,6 +73,10 @@ QSILLY.jokers = {
 	--"dapperslime",
   --"interloper",
 	--"emperorcatfish",
+}
+
+QSILLY.tags = {
+  "front",
 }
 
 function QSILLY.register_items(items, path)
