@@ -23,7 +23,7 @@ QSILLY.jokers = {
   "byte",
   "argon",
   "glitch",
-  --"torpedo",
+  "torpedo",
   --"loop",
   --"niko",
   --"attente",

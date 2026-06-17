@@ -109,6 +109,13 @@ return {
 					 "{s:0.6}IT'S SO FUNS FUN FUN"
 				}
 			},
+			j_qsilly_torpedo = {
+                name = "Torpedo",
+                text = {
+                    "{X:mult,C:white}X#1#{} Mult if your {C:attention}full",
+                    "{C:attention}deck{} is exactly {C:attention}#2#{} cards",
+                },
+            },
 			j_qsilly_adventuringparty = {
 				name = 'Spelljamming Mercenaries',
 				text = {'{C:chips}+100{} Chips and {C:mult}+20{} Mult',
