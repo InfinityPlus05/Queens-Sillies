@@ -116,11 +116,21 @@ return {
                     "{C:attention}deck{} is exactly {C:attention}#2#{} cards",
                 },
             },
+			j_qsilly_loop = {
+                name = "Loop",
+                text = {
+                    "Prevents Death",
+                    "On Death, {C:attention}-#1#{} Hand Size",
+					"permanently"
+                },
+            },
 			j_qsilly_adventuringparty = {
-				name = 'Spelljamming Mercenaries',
-				text = {'{C:chips}+100{} Chips and {C:mult}+20{} Mult',
-				'if hand contains at least',
-				'{C:attention}4{} different ranks'},
+				name = 'Spelljammers',
+				text = {
+					'{C:chips}+#1#{} Chips and {C:mult}+#2#{} Mult',
+					'for every unique {C:attention}rank',
+					'in {C:attention}scoring hand'
+			},
 			},
 			j_qsilly_samanthany = {
 				name = 'Samanthany',
@@ -295,6 +305,7 @@ return {
 			qsilly_polychrome = "Polychrome!",
 			qsilly_switch = "Switch!",
 			qsilly_none = "None",
+			qsilly_saved_by_loop = "Looped and lost hand size",
 		}
 	}
 }

@@ -24,7 +24,7 @@ QSILLY.jokers = {
   "argon",
   "glitch",
   "torpedo",
-  --"loop",
+  "loop",
   --"niko",
   --"attente",
   --"james",
@@ -37,7 +37,7 @@ QSILLY.jokers = {
   --"mollystars",
   --"moisty_mcmoisterson",
   --"girlmario",
-  --"spelljammingmercenaries", -- TTRPG Jokers
+  "spelljammers", -- TTRPG Jokers
   --"uncharted_explorers",
   --"knives_of_justice",
   --"lobotomy_hires",
