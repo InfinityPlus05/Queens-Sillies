@@ -100,6 +100,15 @@ return {
                     "creates a {C:attention}#1#",
                 },
             },
+			j_qsilly_glitch = {
+				name = "GLITCH!!!!",
+				text = {
+					"PLAYED {V:1}#1#{} GIVES",
+					"{C:money}$#5#{C:mult}#3#{X:mult,C:white}#4#{C:chips}#2# {C:money}CM{C:mult}HU{C:chips}ILP{X:mult,C:white}TS",
+					 "{s:0.8}SUIT CHANGES AT END OF ROUND",
+					 "{s:0.6}IT'S SO FUNS FUN FUN"
+				}
+			},
 			j_qsilly_adventuringparty = {
 				name = 'Spelljamming Mercenaries',
 				text = {'{C:chips}+100{} Chips and {C:mult}+20{} Mult',

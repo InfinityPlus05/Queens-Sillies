@@ -59,28 +59,3 @@ SMODS.Joker{ --Wonder
     end,
 }
 
-local function reset_wonder_cards()
-    G.GAME.current_round.wonder_card1 = { rank = 'Ace', suit = 'Spades' }
-	G.GAME.current_round.wonder_card2 = { rank = 'Queen', suit = 'Hearts' }
-    local valid_wonder_cards = {}
-    for _, playing_card in ipairs(G.playing_cards) do
-        if not SMODS.has_no_suit(playing_card) and not SMODS.has_no_rank(playing_card) then
-            valid_wonder_cards[#valid_wonder_cards + 1] = playing_card
-        end
-    end
-    local wonder_card = pseudorandom_element(valid_wonder_cards, 'smileforthecamera' .. G.GAME.round_resets.ante)
-    if wonder_card then
-        G.GAME.current_round.wonder_card1.rank = wonder_card.base.value
-        G.GAME.current_round.wonder_card1.suit = wonder_card.base.suit
-        G.GAME.current_round.wonder_card1.id = wonder_card.base.id
-    end
-	wonder_card = pseudorandom_element(valid_wonder_cards, 'orelseimgonnagetyouteehee:3' .. G.GAME.round_resets.ante)
-    if wonder_card then
-        G.GAME.current_round.wonder_card2.rank = wonder_card.base.value
-        G.GAME.current_round.wonder_card2.suit = wonder_card.base.suit
-        G.GAME.current_round.wonder_card2.id = wonder_card.base.id
-    end
-end
-function SMODS.current_mod.reset_game_globals(run_start)
-    reset_wonder_cards()
-end
